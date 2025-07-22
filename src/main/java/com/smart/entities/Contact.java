@@ -11,6 +11,13 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "CONTACT")
 public class Contact {
+ 
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -82,5 +89,6 @@ public class Contact {
 		this.description = description;
 	}
 	
+	 
 	
 }
