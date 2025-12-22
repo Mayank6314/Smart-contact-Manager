@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: smart-contact-manager
-    runtime: docker
-    buildCommand: ./mvnw clean package
-    startCommand: java -jar target/smartcontactmanager-0.0.1-SNAPSHOT.jar
-    repo: https://github.com/Mayank6314/Smart-contact-Manager
-    branch: main
